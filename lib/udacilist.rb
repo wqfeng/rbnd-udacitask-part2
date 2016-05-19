@@ -4,7 +4,7 @@ class UdaciList
   @@supported_types = ["todo", "event", "link"]
 
   def initialize(options={})
-    @title = options[:title]
+    @title = options[:title]? options[:title]: "Untitled List"
     @items = []
   end
   def add(type, description, options={})

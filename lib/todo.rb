@@ -8,8 +8,6 @@ class TodoItem
     @description = description
     @due = options[:due] ? Date.parse(options[:due]) : options[:due]
     @priority = options[:priority]
-    puts @priority
-    puts !@priority
     if @priority and !(@@supported_priorities.include?(@priority))
       raise UdaciListErrors::InvalidPriorityValue, "invalid priority"
     end
