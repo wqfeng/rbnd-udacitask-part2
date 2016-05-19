@@ -29,6 +29,6 @@ class UdaciList
     end
   end
   def filter(type)
-    @items.select { |e| e.class.name == (type.capitalize + "Item")  }
+    @items.select { |e| e.type == type  }
   end
 end

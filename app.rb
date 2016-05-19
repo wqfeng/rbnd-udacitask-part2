@@ -20,6 +20,7 @@ list.add("event", "Vacation", start_date: "2016-05-28", end_date: "2016-05-31")
 list.add("link", "https://github.com", site_name: "GitHub Homepage")
 list.all
 list.delete(3)
+list.items[0].change_priority("high")
 list.all
 
 # SHOULD CREATE AN UNTITLED LIST AND ADD ITEMS TO IT
@@ -46,4 +47,4 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-puts new_list.filter("event") # should return an array of event
+# puts new_list.filter("event") # should return an array of event

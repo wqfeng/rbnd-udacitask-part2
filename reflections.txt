@@ -1,13 +1,19 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+I use 'artii' to make the title look pretty
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) function to change the priority
+  b) makes the high priority items blink
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+about 4 hours
 2. What was the most rewarding challenge you conquered?
+the process to uncomment the test code and then fix the errors one bye one.
 3. What two additional features did you build? Why?
+  a) function to change the priority
+  b) makes the high priority items blink
 4. Where do you still have room to grow?
+I wish I were more familiar with the Ruby docs and syntax. It could save me a lot of time. For example, I find both @instance_variable and instance_variable works in its class. I'm not sure which one is better. I'd also the dear reviewer or coach give me some feedback based on my code.
