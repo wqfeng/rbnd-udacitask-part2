@@ -1,6 +1,7 @@
 class UdaciList
   attr_reader :title, :items
 
+  @@artii = Artii::Base.new :font => 'slant'
   @@supported_types = ["todo", "event", "link"]
 
   def initialize(options={})
@@ -20,11 +21,14 @@ class UdaciList
     @items.delete_at(index - 1)
   end
   def all
-    puts "-" * @title.length
-    puts @title
-    puts "-" * @title.length
+    # puts "-" * @title.length * 5
+    puts @@artii.asciify @title
+    puts "-" * @title.length * 5
     @items.each_with_index do |item, position|
       puts "#{position + 1}) #{item.details}"
     end
+  end
+  def filter(type)
+    @items.select { |e| e.class.name == (type.capitalize + "Item")  }
   end
 end
